@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./Javascript/active.js"></script>
+    <script src="./Javascript/active.js" defer></script>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="headerlinks">
+            <a href="index.html" class="headerlink">Check the status</a>
+            <nav class="nav">
+                <ul class="navlist">
+                    <li class="navitem"><a href="" class="navlink">Add</a></li>
+                    <li class="navitem"><a href="" class="navlink">Removed</a></li>
+                    <li class="navitem"><a href="" class="navlink">Read</a></li>
+                    <li class="navitem"><a href="" class="navlink">To Read Lists</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-body">
+        <div class="about">
+            <h1>Hey there,</h1>
+            <h3>Want to see something Cool.</h3>
+            <p>Click on the icons on the header part or the buttons down in here. And check the status of the books you read
+                or want to read. You can also add or remove the books from the list. Isn't that cool?
+            </p>
+        </div>
+        <div class="buttons">
+            <button class="Add" onclick="addOrRemove()">Add</button>
+            <button class="Removed" onclick="addOrRemove()">Removed</button>
+            <button class="Read" onclick="Read">Read</button>
+            <button class="ToREAD" onclick="ToRead">To Read List</button>
+            <button type="button" class="books" onclick="displayBooks()">Your Book</button>
+        </div>
+        <div class="form">
+            <form action="">
+                <input type="text" name="bookname" id="bookname" placeholder="Book Name">
+                <input type="text" name="author" id="author" placeholder="Author">
+                <input type="text" name="genre" id="genre" placeholder="Genre">
+                <input type="text" name="status" id="status" placeholder="Status">
+                <button type="submit" class="submit" onclick="submit()">Submit</button>
+            </form>
+        </div>
+
+        <div class="booksinLibrary">
+
+        </div>
+    </main>
 </body>
 </html>

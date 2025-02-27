@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px 0 20px;
+    height: 10vh;
+    background-color: rgb(163, 163, 163);
+}
+
+.headerlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navlist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlist li {
+    color: black;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navlist li a,
+.headerlinks a {
+    color: black;
+}
+
+
+.main-body {
+    height: 90vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    width: 40vw;
+}
+
+.about h1,
+.about p,
+.about h3 {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    width: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: rgb(163, 163, 163);
+    color: white;
+    cursor: pointer;
+}
+
+.books {
+    grid-area: 3/1/4/3;
+}
+
+.form {
+    width: 10vw;
+    margin-top: 30px;
+    display: none;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form input {
+    margin-bottom: 10px;
+}
