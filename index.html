@@ -32,19 +32,20 @@
         </div>
         <div class="buttons">
             <button class="Add" onclick="add()">Add</button>
-            <button class="Removed" onclick="remove()">Removed</button>
+            <button class="Removed" onclick="removebooks()">Removed</button>
             <button class="Read" onclick="Read">Read</button>
             <button class="ToREAD" onclick="ToRead">To Read List</button>
             <button type="button" class="books" onclick="displayBooks()">Your Book</button>
         </div>
         <div class="form">
-            <form action="">
+            <form>
                 <input type="text" name="bookname" id="bookname" placeholder="Book Name">
                 <input type="text" name="author" id="author" placeholder="Author">
                 <input type="text" name="genre" id="genre" placeholder="Genre">
-                <input type="text" name="status" id="status" placeholder="Status">
-                <button class="submit" onclick="submitForm()">Submit</button>
+                <input type="checkbox" name="status" id="status">
+                <label for="status">Status</label>
             </form>
+            <button type="button" class="submit" onclick="submitForm()">Submit</button>
         </div>
     </main>
     <div class="booksinLibrary">

@@ -80,13 +80,17 @@ header {
     display: none;
 }
 
-.form form {
-    display: flex;
-    flex-direction: column;
-}
-
 .form form input {
     margin-bottom: 10px;
+}
+
+
+.submit {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(163, 163, 163);
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -118,8 +122,20 @@ header {
     display: grid;
 }
 
+/* .removedbooks {
+    margin-top: 20px;
+    display: none;
+    background-color: rgb(164, 164, 164);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+} */
+
 .read {
-    background-color: red;
     color: white;
     margin-bottom: 5px;
 }
