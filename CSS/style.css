@@ -36,7 +36,7 @@ header {
 
 
 .main-body {
-    height: 90vh;
+    height: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -88,3 +88,39 @@ header {
 .form form input {
     margin-bottom: 10px;
 }
+
+
+.booksinLibrary {
+    display: none;
+    margin-top: 20px;
+}
+
+.listOfBooks {
+    background-color: rgb(164, 164, 164);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+}
+
+.card {
+    padding: 10px;
+    font-size: 20px;
+    background-color: aliceblue;
+    width: 20vw;
+    height: 20vh;
+    box-shadow: 0 0 10px black;
+    color: black;
+    overflow: hidden;
+    display: grid;
+}
+
+.read {
+    background-color: red;
+    color: white;
+    margin-bottom: 5px;
+}
+
